@@ -2,8 +2,8 @@
  * Dependencies
  */
 
-var test         = require('tape')
-var documentSize = require('../')
+const test         = require('tape');
+const documentSize = require('../');
 
 /**
  * Tests
@@ -11,14 +11,14 @@ var documentSize = require('../')
 
 test('documentSize', function(t) {
   t.test('.height', function(assert) {
-    assert.notEqual(documentSize.height, 0)
-    assert.end()
-  })
+    assert.notEqual(documentSize.height(), 0);
+    assert.end();
+  });
 
   t.test('.width', function(assert) {
-    assert.notEqual(documentSize.width, 0)
-    assert.end()
-  })
+    assert.notEqual(documentSize.width(), 0);
+    assert.end();
+  });
 
   t.end()
-})
+});

@@ -2,9 +2,9 @@
  * Dependencies
  */
 
-var doc  = document
-var body = doc.body
-var elem = doc.documentElement
+const doc  = document;
+const body = doc.body;
+const elem = doc.documentElement;
 
 /**
  * Get the height of the document.
@@ -43,6 +43,6 @@ function getWidth() {
  */
 
 module.exports = {
-  height: getHeight(),
-  width: getWidth()
-}
+  height: getHeight,
+  width: getWidth
+};

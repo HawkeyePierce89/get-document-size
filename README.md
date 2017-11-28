@@ -16,7 +16,8 @@ npm install get-document-size
 ``` javascript
 var documentSize = require('get-document-size')
 
-console.log(documentSize) // => { height: 989, width: 1024 }
+console.log(documentSize.width()) // => 989
+console.log(documentSize.height()) // => 1024
 ```
 
 [npm-img]: https://img.shields.io/npm/v/get-document-size.svg?style=flat-square
